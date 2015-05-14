@@ -1,0 +1,95 @@
+OnLoadMission = "Murphy's Law Episode 2";
+author = fr33d0m;
+onLoadName = Murphy's Law Episode 2;
+// this is the pic on load... change this...      loadScreen = "";
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 5;
+};
+respawn = "NONE";
+disabledAI = 0;
+aikills = 1;
+#include "VAS\menu.hpp"
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class CfgSounds {
+	sounds[] = 	{intro,Alarm1,dead,stoogeB1,recqgreet1,mexmaf1,juanbitch,juanNATO1,brief1,pump1,pump2,pump3};
+
+	class intro{
+	name = "intro";
+	sound[] = {"\sounds\intro.ogg", 0.6, 1.0};
+	titles[] = {};
+	};
+
+	class Alarm1{
+	name = "Alarm1";
+	sound[] = {"\sounds\Alarm1.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+	
+	class dead{
+	name = "dead";
+	sound[] = {"\sounds\dead.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class stoogeB1{
+	name = "stoogeB1";
+	sound[] = {"\sounds\stoogeB1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+	
+	class recqgreet1{
+	name = "recqgreet1";
+	sound[] = {"\sounds\recqgreet1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class mexmaf1{
+	name = "mexmaf1";
+	sound[] = {"\sounds\mexmaf1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+	
+	class juanbitch{
+	name = "juanbitch";
+	sound[] = {"\sounds\juanbitch.ogg", 0.5, 1.0};
+	titles[] = {};
+	};
+
+	class JuanNATO1{
+	name = "juanNATO1";
+	sound[] = {"\sounds\juanNATO1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class brief1{
+	name = "brief1";
+	sound[] = {"\sounds\brief1.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+
+	class pump1{
+	name = "pump1";
+	sound[] = {"\sounds\pump1.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+
+	class pump2{
+	name = "pump2";
+	sound[] = {"\sounds\pump2.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+
+	class pump3{
+	name = "pump3";
+	sound[] = {"\sounds\pump3.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+};

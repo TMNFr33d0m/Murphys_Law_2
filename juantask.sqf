@@ -1,0 +1,14 @@
+meet1 setTaskState "Succeeded";
+playSound "Brief1";
+hint "We have a lot on our plate this evening, but first and foremost, we want your team to infiltrate a heavily guarded village and arrest a drug kingpin that's here from Columbia taking advantage of Altis's fair climate and it's wild coca plants.";
+sleep 10.0;
+hint "Find the drugs he is shipping off the island and destroy them, if the opportunity arises, but your most important order is to get Juan Cordova back to our base alive for questioning. We believe he has intel on CSAT official's locations";
+sleep 10.0;
+hint "Juan Cordova is a high ranking columbian drug cartel member with direct ties to the MS13 cartel. His guard is a CSAT detachment assigned just to him. He should be a tough customer to bring in. Good luck.";
+juan = player createSimpleTask ["Arrest Juan Cordova"];
+juan setSimpleTaskDescription ["Arrest Juan Cordova at his Kalithea villa.","Arrest Juan Cordova","Arrest Juan Cordova"];
+juan setSimpleTaskDestination (getMarkerPos "juan1");
+juan setTaskState "Assigned";
+Player setCurrentTask juan;
+sleep 10.0; 
+playSound "pump1";

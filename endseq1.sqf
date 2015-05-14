@@ -1,0 +1,10 @@
+RTB2 = player createSimpleTask ["Return to Base with Juan Cordova"];
+RTB2 setSimpleTaskDescription ["Return to the C.O. at Camp Tulsa.","Return To Base","RTB"];
+RTB2 setSimpleTaskDestination (getMarkerPos "meet1");
+RTB2 setTaskState "Assigned";
+Player setCurrentTask RTB2;
+RTB2T=createTrigger["EmptyDetector",(getMarkerPos "meet1")];
+RTB2T setTriggerArea[10,10,0,false];
+RTB2T setTriggerActivation["WEST","PRESENT",false];
+RTB2T triggerAttachVehicle [player];
+RTB2T setTriggerStatements["this","endMission 'end1'", ""];
